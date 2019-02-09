@@ -6,3 +6,5 @@ API
 |-----|------|-------|-----|
 | value | string | - | 输入框的值 |
 | onChange | function <value> | - | 输入框修改 |
+| defaultValue | string | - | 默认值 |
+| 
