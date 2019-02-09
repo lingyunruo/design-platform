@@ -58,7 +58,7 @@ class Input extends Component {
                 onChange={this.onChange}
                 style={{
                     ...style,
-                    height: sizeMap[size]
+                    height: sizeMap[size] ? sizeMap[size] : '32px'
                 }}
             />
         );
