@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import './index.less';
 
+import {Link} from 'react-router-dom';
+
 
 class HomePage extends Component {
     constructor(props) {
@@ -11,7 +13,10 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                alalalal
+                主页面
+                <div>
+                    <Link to="/login">登陆</Link>
+                </div>
             </div>
         );
     }

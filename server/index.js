@@ -10,5 +10,10 @@ const server = new PServer({
     templateData: {
         '/index.html': {}
     },
-    controller: ''
+    controller: 'server/controller'
 });
+
+
+server.router.get('/login', server.controller.router.login);
+
+server.router.get('/', server.controller.router.index);

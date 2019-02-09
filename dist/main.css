@@ -1,1 +1,39 @@
 
+.login-page {
+  width: 500px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  padding: 30px;
+  min-height: 300px;
+  border-radius: 5px;
+}
+.login-page .login-input {
+  margin-bottom: 12px;
+}
+
+.paper-input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  padding: 0 12px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.paper-input:hover {
+  border-color: #40a9ff;
+  border-right-width: 1px !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+
