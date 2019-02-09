@@ -8,4 +8,3 @@ API
 | onChange | function <value> | - | 输入框修改 |
 | defaultValue | string | - | 默认值 |
 | size | string | normal | 大小，值: small normal large |
-| 
