@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './index.less';
 
 import Input from '../../lib/Input';
+import Button from '../../lib/Button';
 
 class Login extends Component {
     constructor(props) {
@@ -42,6 +43,13 @@ class Login extends Component {
                     onChange={this.handleChange('passWord')}
                     className="login-input"
                 />
+                <Button
+                    type="primary"
+                    className="login-button"
+                    size="small"
+                >
+                    登陆
+                </Button>
             </div>
         );
     }
