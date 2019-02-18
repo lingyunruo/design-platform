@@ -24,13 +24,15 @@ class Button extends Component {
             size,
             children,
             className = '',
-            style
+            style,
+            onClick
         } = this.props;
 
         return (
             <button
                 className={`paper-button${typeMap[type] ? ` ${typeMap[type]}` : ''}${sizeMap[size] ? ` ${sizeMap[size]}` : ''}${className ? ' ' + className : ''}`}
                 style={style || {}}
+                onClick={onClick}
             >
                 <span>{children}</span>
             </button>

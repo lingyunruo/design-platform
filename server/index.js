@@ -17,3 +17,5 @@ const server = new PServer({
 server.router.get('/login', server.controller.router.login);
 
 server.router.get('/', server.controller.router.index);
+
+server.router.post('/api/login', server.controller.login.checkUser);

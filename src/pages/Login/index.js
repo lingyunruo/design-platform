@@ -15,6 +15,21 @@ class Login extends Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.login = this.login.bind(this);
+    }
+
+    login() {
+        fetch('/api/login', {
+            body: JSON.stringify({
+                userName: this.state.userName,
+                passWord: this.state.passWord
+            }),
+            method: 'post',
+            credentials: 'same-origin'
+        })
+            .then((res) => {
+                console.log(res);
+            });
     }
 
     handleChange(field) {
@@ -46,7 +61,7 @@ class Login extends Component {
                 <Button
                     type="primary"
                     className="login-button"
-                    size="small"
+                    onClick={this.login}
                 >
                     登陆
                 </Button>
