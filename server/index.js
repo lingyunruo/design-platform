@@ -1,21 +1,29 @@
+const express = require('express');
 const path = require('path');
-const PServer = require('../../p-server/src');
 
-const server = new PServer({
-    port: 9000,
-    root: path.join(__dirname, '../'),
-    templateExtensionName: ['.html'],
-    mock: {
-    },
-    templateData: {
-        '/index.html': {}
-    },
-    controller: 'server/controller'
+
+let app = express();
+
+
+app.use('/static/', express.static(path.join(__dirname, '../dist')));
+app.set('views', path.join(__dirname, '../index.html'));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+ 
+app.get('*', function(req, res) {
+
+    res.render(path.join(__dirname, '../index.html'));
+
+});
+
+app.post('/create_page', function(req, res) {
+
+    res.send({
+        data: {},
+        success: true
+    });
+
 });
 
 
-server.router.get('/login', server.controller.router.login);
-
-server.router.get('/', server.controller.router.index);
-
-server.router.post('/api/login', server.controller.login.checkUser);
+app.listen('9090');
