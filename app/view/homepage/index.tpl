@@ -7,6 +7,7 @@
     </head>
 
     <body>
+        <div>秀秀之站</div>
         <div id="app">
         </div>
         <script src="/public/lib/react/umd/react.development.js"></script>
