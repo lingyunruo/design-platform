@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "server": "node ./server/index.js"
+    "dev": "egg-bin dev --port 8080",
+    "w": "webpack --config ./app/public/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -17,35 +17,35 @@
     "url": "https://github.com/lingyunruo/design-platform/issues"
   },
   "homepage": "https://github.com/lingyunruo/design-platform#readme",
+  "dependencies": {
+    "ader": "^1.0.3",
+    "antd": "^4.3.4",
+    "axios": "^0.19.2",
+    "egg": "^2.26.1",
+    "egg-view-nunjucks": "^2.2.0",
+    "ll-data": "0.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
+    "egg-bin": "^4.14.1",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.1.0",
-    "express": "^4.17.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
-    "less": "^3.9.0",
+    "less": "^3.10.3",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.5.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
-  },
-  "dependencies": {
-    "ader": "0.0.3",
-    "antd": "^3.24.3",
-    "axios": "^0.19.0",
-    "ejs": "^2.7.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "url-loader": "^1.1.2"
   }
 }

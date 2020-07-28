@@ -1,0 +1,112 @@
+2020-05-16 21:42:24,968 ERROR 18840 [-/111.198.226.92/-/5026ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/root/design-platform/node_modules/urllib/lib/urllib.js:938:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key&startAt=%220%22&endAt=%224%22"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5017,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.201.97.85","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 18840
+hostname: iZ8vbcval6t2nfh7e1q5q2Z
+
+2020-05-16 21:49:24,452 ERROR 18854 [-/111.198.226.92/-/5024ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/root/design-platform/node_modules/urllib/lib/urllib.js:938:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key&startAt=%220%22&endAt=%224%22"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5015,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.201.97.85","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 18854
+hostname: iZ8vbcval6t2nfh7e1q5q2Z
+
+2020-05-18 21:25:52,184 ERROR 22343 [-/111.198.228.14/-/206ms GET /news] nodejs.RequestError: getaddrinfo ENOTFOUND topstories.json topstories.json:80, GET http:///topstories.json -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"topstories.json:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {} (topstories.json) (topstories.json) (topstories.json)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+errno: "ENOTFOUND"
+code: "ENOTFOUND"
+syscall: "getaddrinfo"
+hostname: "topstories.json"
+host: "topstories.json"
+port: 80
+name: "RequestError"
+data: undefined
+path: "/?orderBy=%22%24key&startAt=%220%22&endAt=%224%22"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":197,"keepAliveSocket":false,"requestUrls":["http://topstories.json/"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 22343
+hostname: iZ8vbcval6t2nfh7e1q5q2Z
+
+2020-05-18 21:26:22,475 ERROR 22365 [-/111.198.228.14/-/51ms GET /news] nodejs.RequestError: getaddrinfo ENOTFOUND topstories.json topstories.json:80, GET http:///topstories.json -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"topstories.json:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {} (topstories.json) (topstories.json) (topstories.json)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+errno: "ENOTFOUND"
+code: "ENOTFOUND"
+syscall: "getaddrinfo"
+hostname: "topstories.json"
+host: "topstories.json"
+port: 80
+name: "RequestError"
+data: undefined
+path: "/?orderBy=%22%24key&startAt=%220%22&endAt=%224%22"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":41,"keepAliveSocket":false,"requestUrls":["http://topstories.json/"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 22365
+hostname: iZ8vbcval6t2nfh7e1q5q2Z
+
+2020-06-18 19:48:46,922 ERROR 24771 [-/undefined/-/27ms GET /public/static/index.js] nodejs.EPIPEError: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:83:16)
+errno: "EPIPE"
+code: "EPIPE"
+syscall: "write"
+headerSent: true
+name: "EPIPEError"
+pid: 24771
+hostname: MacBook-Pro-2.local
+
+2020-06-18 19:57:16,498 ERROR 28707 [-/undefined/-/19ms GET /public/static/index.js] nodejs.EPIPEError: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:83:16)
+errno: "EPIPE"
+code: "EPIPE"
+syscall: "write"
+headerSent: true
+name: "EPIPEError"
+pid: 28707
+hostname: MacBook-Pro-2.local
+
+2020-07-28 21:35:21,760 ERROR 46443 [-/undefined/-/82ms GET /public/static/index.js] nodejs.EPIPEError: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:83:16)
+errno: "EPIPE"
+code: "EPIPE"
+syscall: "write"
+headerSent: true
+name: "EPIPEError"
+pid: 46443
+hostname: 192.168.0.102
+
+2020-07-28 21:35:21,958 ERROR 46443 [-/undefined/-/140ms GET /public/static/index.js] nodejs.EPIPEError: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:83:16)
+errno: "EPIPE"
+code: "EPIPE"
+syscall: "write"
+headerSent: true
+name: "EPIPEError"
+pid: 46443
+hostname: 192.168.0.102
+
