@@ -14,3 +14,10 @@ exports.security = {
 exports.development = {
     reloadPattern: ['**', '!**/persistent/**/*.json']
 }
+
+exports.cluster = {
+    listen: {
+        port: 8080,
+        hostname: '127.0.0.1'
+    }
+}
