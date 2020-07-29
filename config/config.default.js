@@ -18,6 +18,6 @@ exports.development = {
 exports.cluster = {
     listen: {
         port: 8080,
-        hostname: '127.0.0.1'
+        hostname: '39.98.40.201'
     }
 }
