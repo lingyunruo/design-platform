@@ -22,7 +22,7 @@
   "dependencies": {
     "ader": "^1.0.3",
     "antd": "^4.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "egg": "^2.26.1",
     "egg-scripts": "^2.13.0",
     "egg-view-nunjucks": "^2.2.0",
